@@ -35,13 +35,7 @@ npm run dev
 - **Knowledge pipeline**: MuPDF → per-page text + PNGs → (optional) Claude vision descriptions → **local** `all-MiniLM-L6-v2` embeddings → **LanceDB** vector index.
 - **Benchmarks**: `npm run eval:retrieval` checks that retrieval hits contain expected keywords (no LLM call).
 
-## Reliability choices (why this should score well)
 
-1. **Dual path for specs**: numeric duty/current questions hit structured JSON transcribed from **Owner's Manual p.7**, not “whatever retrieval returned”.
-2. **Explicit polarity rules in the system prompt** for TIG vs Stick vs MIG sockets, aligned with **p.8 / p.24 / p.27**.
-3. **Clarification-first behavior** when process, gas, or voltage is missing.
-4. **Citations required** in the system prompt (document + page).
-5. **Measurable retrieval quality** via `benchmark/benchmarks.json`.
 
 ## Commands
 
@@ -66,6 +60,3 @@ npm run dev
 - **Vision** during extract improves figure-heavy pages; use full extract before submission demos.
 - **Welding safety**: user must follow the manual and local codes — the assistant summarizes, it does not replace certified training.
 
-## Original challenge
-
-See the upstream Prox repo for full requirements: [prox-technologies/prox-challenge](https://github.com/prox-technologies/prox-challenge).
