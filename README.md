@@ -1,6 +1,6 @@
-# Vulcan OmniPro 220 — Multimodal assistant (Prox challenge)
+# Vulcan OmniPro 220 — Multimodal assistant
 
-Fork: **isabelccc/prox-challenge** — a local-first assistant that answers technical questions about the OmniPro 220 using the PDFs in `files/`, with **citations**, **interactive artifacts**, and an **offline retrieval benchmark**.
+
 
 <img src="product.webp" alt="Vulcan OmniPro 220" width="360" /> <img src="product-inside.webp" alt="OmniPro 220 panel" width="360" />
 
